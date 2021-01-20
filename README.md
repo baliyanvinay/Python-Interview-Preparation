@@ -166,3 +166,10 @@ a,b = 10, 12
 f"Sum of a and b is {a+b}"
 f"Value of c is {(c := a+b)}"
 ```
+
+## Coding Question
+```python
+# Transpose a square matrix of n rows and columns
+# Write a function that will place even elements of an array at even indexes and odd at odd indexes. 
+# Write a function that checks if an array is a subsequence of first array
+```
