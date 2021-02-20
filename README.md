@@ -168,7 +168,7 @@ f"Value of c is {(c := a+b)}"
 ```
 
 ## 7. Explain Python Design Patterns. 
-Ref: https://www.youtube.com/watch?v=bsyjSW46TDg
+Ref: https://www.youtube.com/watch?v=o1FZ_Bd4DSM
 
 ## 8. How would you load a 4GB data file in Python?
 
