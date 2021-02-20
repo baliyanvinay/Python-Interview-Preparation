@@ -167,6 +167,15 @@ f"Sum of a and b is {a+b}"
 f"Value of c is {(c := a+b)}"
 ```
 
+## 7. Explain Python Design Patterns. 
+Ref: https://www.youtube.com/watch?v=bsyjSW46TDg
+
+## 8. How would you load a 4GB data file in Python?
+
+## 9. Explain Generators and use case of it.
+
+## 10. Is there a sequence in defining exceptions in except block for exception handling?
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
