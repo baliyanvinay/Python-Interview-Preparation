@@ -181,4 +181,5 @@ Ref: https://www.youtube.com/watch?v=o1FZ_Bd4DSM
 # Transpose a square matrix of n rows and columns
 # Write a function that will place even elements of an array at even indexes and odd at odd indexes. 
 # Write a function that checks if an array is a subsequence of first array
+# Write a function that unzips nested dicts into expanded dicts.
 ```
