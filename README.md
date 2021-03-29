@@ -188,6 +188,13 @@ with open("log.txt") as infile:
 ## 9. Explain Generators and use case of it.
 
 ## 10. Is there a sequence in defining exceptions in except block for exception handling?
+Yes can be defined in a tuple. From left to right will be executed based on the exception raised. 
+```python
+try:
+    pass
+except (TypeError, IndexError, RuntimeError) as error:
+    pass
+```
 
 ## 11. Explain Closures in Python
 
@@ -213,12 +220,14 @@ print(index())
 
 ```
 
-# 13. 3 different ways to fetch every 3rd item of a list
-# 14. What is MRO in Python? How does it work?
-# 15. What is monkey patching? How to use it in Python?
-# 16. What is the difference between @staticmethod and @classmethod?
-# 17. What is the purpose of the single underscore “_” variable in Python?
-# 18. What's the difference between a Python module and a Python package?
+## 13. 3 different ways to fetch every 3rd item of a list
+## 14. What is MRO in Python? How does it work?
+## 15. What is monkey patching? How to use it in Python?
+## 16. What is the difference between @staticmethod and @classmethod?
+## 17. What is the purpose of the single underscore “_” variable in Python?
+## 18. What's the difference between a Python module and a Python package?
+## 19. What is a global interpreter lock (GIL)?
+Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
 
 ## Coding Question
 ```python
