@@ -178,10 +178,48 @@ for chunk in pd.read_csv(file.csv, chunksize=1000):
     
 pd.read_csv('file.csv', sep='\t', iterator=True, chunksize=1000)
 ```
+Another way is to use context manager.
+```python
+with open("log.txt") as infile:
+    for line in infile:
+        do_something_with(line)
+```
 
 ## 9. Explain Generators and use case of it.
 
 ## 10. Is there a sequence in defining exceptions in except block for exception handling?
+
+## 11. Explain Closures in Python
+
+## 12. How to make a chain of function decorators?
+```python
+def make_bold(fn):
+    def wrapped():
+        return "<b>" + fn() + "</b>"
+    return wrapped
+
+def make_italic(fn):
+    def wrapped():
+        return "<i>" + fn() + "</i>"
+    return wrapped
+
+@make_bold
+@make_italic
+def index():
+    return "hello world"
+
+print(index()) 
+## returns "<b><i>hello world</i></b>"
+
+```
+
+13. 3 different ways to fetch every 3rd item of a list
+
+14. What is MRO in Python? How does it work?
+15. What is monkey patching? How to use it in Python?
+16. What is the difference between @staticmethod and @classmethod?
+17. What is the purpose of the single underscore “_” variable in Python?
+18. What's the difference between a Python module and a Python package?
 
 ## Coding Question
 ```python
