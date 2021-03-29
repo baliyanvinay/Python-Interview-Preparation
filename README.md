@@ -170,7 +170,14 @@ f"Value of c is {(c := a+b)}"
 ## 7. Explain Python Design Patterns. 
 Ref: https://www.youtube.com/watch?v=o1FZ_Bd4DSM
 
-## 8. How would you load a 4GB data file in Python?
+## 8. How would you load large data file in Python?
+The best way is to load data in chunks, Pandas provides option to define chunk size while loading any file. 
+```python
+for chunk in pd.read_csv(file.csv, chunksize=1000):
+    process(chunk)
+    
+pd.read_csv('file.csv', sep='\t', iterator=True, chunksize=1000)
+```
 
 ## 9. Explain Generators and use case of it.
 
