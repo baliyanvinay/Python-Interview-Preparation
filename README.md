@@ -213,13 +213,12 @@ print(index())
 
 ```
 
-13. 3 different ways to fetch every 3rd item of a list
-
-14. What is MRO in Python? How does it work?
-15. What is monkey patching? How to use it in Python?
-16. What is the difference between @staticmethod and @classmethod?
-17. What is the purpose of the single underscore “_” variable in Python?
-18. What's the difference between a Python module and a Python package?
+# 13. 3 different ways to fetch every 3rd item of a list
+# 14. What is MRO in Python? How does it work?
+# 15. What is monkey patching? How to use it in Python?
+# 16. What is the difference between @staticmethod and @classmethod?
+# 17. What is the purpose of the single underscore “_” variable in Python?
+# 18. What's the difference between a Python module and a Python package?
 
 ## Coding Question
 ```python
