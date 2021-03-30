@@ -251,6 +251,34 @@ Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gi
 ## 25. Explain Abstract Classes and its uses.
 ## 26. Explain object creation process in detail. Which method is called first?
 ## 27. Difference between a class variable and instance variable.
+| Parameter | Class Variable | Instance Variable |
+| :-------------:|:-------------:| :-------------:|
+| Declaration | Inside class definition but outside of any instance methods | Inside constructor method i.e., __init__ |
+| Scope | Shared across all objects | Tied to the object instance |
+| Behaviour | Any change is reflected across all instances | Change limited to instances only |
+| Access | cls.variable_name | self.variable_name |
+
+```python
+class Car:
+    wheels = 4
+    total_cars = 0
+    
+    def __init__(self, engine_power):
+        self.engine_power =  engine_power
+        Car.total_cars += 1 # incremented anytime a new car is added. 
+        
+kia_sonet = Car(120)
+print(kia_sonet.wheels) # returns 4
+kia_sonet.wheels += 1 # extra wheel
+print(kia_sonet.wheels) # returns 5
+
+print(Car.total_cars) # returns 1
+print(Car.wheels) # returns 4 not 5
+Car.wheel = 6 # two extra wheels
+
+print(kia_sonet.wheels) # returns 6 now
+```
+
 ## 28. Explain the concept behind dictionary in Python
 
 ## Coding Question
