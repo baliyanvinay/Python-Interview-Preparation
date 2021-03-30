@@ -200,6 +200,7 @@ search_object = search_result('keyword')
 
 search_object.__next__()
 ```
+Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Generator.py
 
 ## 10. Is there a sequence in defining exceptions in except block for exception handling?
 Yes can be defined in a tuple. From left to right will be executed based on the exception raised. 
@@ -260,9 +261,7 @@ Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gi
 
 ```python
 class Car:
-    wheels = 4
-    total_cars = 0
-    
+    total_cars, wheels = 0, 4
     def __init__(self, engine_power):
         self.engine_power =  engine_power
         Car.total_cars += 1 # incremented anytime a new car is added. 
@@ -278,6 +277,7 @@ Car.wheel = 6 # two extra wheels
 
 print(kia_sonet.wheels) # returns 6 now
 ```
+Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Class%20Variables.py
 
 ## 28. Explain the concept behind dictionary in Python
 
