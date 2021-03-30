@@ -20,7 +20,7 @@ Look at the below example
 >>> var = 'Tom' # Object 'Tom' is created in memory and name 'var' is binded to it. 
 >>> var = 'Harry' # Another object is created however note that name 'var' is now binded to 'Harry' but 'Tom' is still somewhere in memory and is unaffected.
 ```
-PyCon Ref: https://www.youtube.com/watch?v=F6u5rhUQ6dU
+Ref: [Nina Zakharenko - Memory Management in Python - The Basics - PyCon 2016](https://www.youtube.com/watch?v=F6u5rhUQ6dU)
 
 ## 2. What is mutable and immutable objects/data types in Python?
 Mutation generally refers to 'change'. So when we say that an object is mutable or immutable we meant to say that the value of object can/cannot change. <br>
