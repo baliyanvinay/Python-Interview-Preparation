@@ -280,6 +280,15 @@ print(kia_sonet.wheels) # returns 6 now
 Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Class%20Variables.py
 
 ## 28. Explain the concept behind dictionary in Python
+- A dictionary consists of a collection of key-value pairs. Each key-value pair maps the key to its associated value.
+- A key can appear in a dictionary only once. Duplicate keys are not allowed
+- Using a key twice in initial dict definition will override the first entry
+- Key must be of a type that is immutable. Values can be anything
+
+```python
+dict_sample = {1: 12, 2: 14, 1: 16}
+print(dict_sample) # {1: 16, 2: 14}
+```
 
 ## Coding Question
 ```python
