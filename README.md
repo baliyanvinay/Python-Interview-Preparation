@@ -220,7 +220,7 @@ print(index())
 
 ```
 
-## 13. 3 different ways to fetch every 3rd item of a list
+## 13. Three different ways to fetch every 3rd item of a list
 ## 14. What is MRO in Python? How does it work?
 ## 15. What is monkey patching? How to use it in Python?
 ## 16. What is the difference between @staticmethod and @classmethod?
@@ -228,6 +228,16 @@ print(index())
 ## 18. What's the difference between a Python module and a Python package?
 ## 19. What is a global interpreter lock (GIL)?
 Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
+
+## 20. Which is faster, list comprehension or for loop?
+## 21. Explain Singleton class and its uses?
+## 22. Explain Meta Classes. 
+## 23. Best way to concatenate n number of strings together into one.
+## 24. Explain briefly about map() and lambda() functions.
+## 25. Explain Abstract Classes and its uses.
+## 26. Explain object creation process in detail. Which method is called first?
+## 27. Difference between a class variable and instance variable.
+## 28. Explain the concept behind dictionary in Python
 
 ## Coding Question
 ```python
