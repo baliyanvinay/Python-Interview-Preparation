@@ -186,6 +186,20 @@ with open("log.txt") as infile:
 ```
 
 ## 9. Explain Generators and use case of it.
+A Generator is a function that returns an iterator object which we can iterate over one value at a time. 
+Generators are good for calculating large sets of results where you don't know if you are going to need all results, or where you don't want to allocate the memory for all results at the same time.
+
+```python
+# Search function as generator, effective for returning some set as result with functionality like 'Load 10 more items'
+def search_result(keyword):
+    while keyword in dataset:
+        yield matched_data
+
+search_object = search_result('keyword')
+# type(search_function)  --> <class 'generator'>
+
+search_object.__next__()
+```
 
 ## 10. Is there a sequence in defining exceptions in except block for exception handling?
 Yes can be defined in a tuple. From left to right will be executed based on the exception raised. 
