@@ -187,7 +187,7 @@ with open("log.txt") as infile:
 ```
 
 ## 9. Explain Generators and use case of it.
-A function or method which uses the yield statement is called a generator function. Such a function, when called, always returns an iterator object which can be used to execute the body of the function: calling the iterator’s iterator.__next__() method will cause the function to execute until it provides a value using the yield statement. <br>
+A function or method which uses the yield statement is called a generator function. Such a function, when called, always returns an iterator object which can be used to execute the body of the function: calling the iterator’s iterator.\__next__()method will cause the function to execute until it provides a value using the yield statement. <br>
 When the function executes a return statement or falls off the end, a StopIteration exception is raised and the iterator will have reached the end of the set of values to be returned.
 #### Use Case
 Generators are good for calculating large sets of results where you don't know if you are going to need all results, or where you don't want to allocate the memory for all results at the same time.
@@ -257,7 +257,7 @@ Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gi
 ## 27. Difference between a class variable and instance variable.
 | Parameter | Class Variable | Instance Variable |
 | :-------------:|:-------------:| :-------------:|
-| Declaration | Inside class definition but outside of any instance methods | Inside constructor method i.e., __init__ |
+| Declaration | Inside class definition but outside of any instance methods | Inside constructor method i.e., \__init__ |
 | Scope | Shared across all objects | Tied to the object instance |
 | Behaviour | Any change is reflected across all instances | Change limited to instances only |
 | Access | cls.variable_name | self.variable_name |
