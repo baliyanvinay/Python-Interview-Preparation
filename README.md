@@ -139,6 +139,17 @@ The reference count
 - increases if an object is assigned a new name or is placed in a container, like tuple or dictionary.
 - decreases when the object's reference goes out of scope or when name is assigned to another object. 
 Python's garbage collector handles the job of removing objects & a programmer need not to worry about allocating/de-allocating memory like it is done in C.
+```python
+>>> import sys
+>>> sys.getrefcount(17)
+>>> 11
+>>> a = 17
+>>> b = 17
+>>> a is b
+>>> True
+>>> sys.getrefcount(17)
+>>> 13 # addition of two
+```
 
 ## 5. Explain exception handling in Python.
 Exception handling is the way by which a programmer can control an error within the program without breaking out the flow of execution. 
