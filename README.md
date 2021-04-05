@@ -252,7 +252,30 @@ print(index())
 ## 13. Three different ways to fetch every 3rd item of a list
 ## 14. What is MRO in Python? How does it work?
 ## 15. What is monkey patching? How to use it in Python?
-## 16. What is the difference between @staticmethod and @classmethod?
+## 16. What is the difference between staticmethod and classmethod?
+| Parameter | Class Method | Static Method |
+| :-------------:|:-------------:| :-------------:|
+| Decorator | @classmethod | @staticmethod |
+| Use Case| More widely used as a factory method to class | Acts as utility functions |
+| Scope | Bound to the classs and not objects | Also bound to class and not objects |
+| Behaviour | Can modify the state of the class | Can't access class state |
+| Parameter | Takes cls as first parameter | No specific parameter |
+```python
+class Circle:
+    no_of_circles = 0
+    def __init__(self, radius):
+        self.radius = radius
+        Circle.no_of_circles += 1
+        
+    @staticmethod
+    def square(num):
+        return num**2
+    
+    @classmethod
+    def getCircleCount(cls):
+        return cls.no_of_circles
+```
+
 ## 17. What is the purpose of the single underscore “_” variable in Python?
 Python automatically stores the value of last expression in interpreter in single underscore. 
 ```python
