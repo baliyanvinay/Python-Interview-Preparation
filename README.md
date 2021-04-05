@@ -254,17 +254,46 @@ print(index())
 ## 15. What is monkey patching? How to use it in Python?
 ## 16. What is the difference between @staticmethod and @classmethod?
 ## 17. What is the purpose of the single underscore “_” variable in Python?
+Python automatically stores the value of last expression in interpreter in single underscore. 
+```python
+>>> 78 + 89
+167
+>>> _
+167
+```
+Single underscore used in unpacking to ignore value(s). 
+```python
+>>> a, _, b = (1, 12, 2)
+>>> a, *_, b = (1, 12, 13, 14, 15, 16, 2) # only want first and last value
+>>> a, *x, b = (1, 12, 13, 14, 15, 16, 2) # note that any other name can also be used
+>>> _ # returns a list of elements
+[12, 13, 14, 15, 16]
+```
+It is most commonly used in loops where we are not interested in the value returned by the iterator.
+```python
+for _ in range(5):
+    print('Some operations')
+```
+Note that it is entirely the convention to use single underscore in all these ways to avoid having defined extra variable for such operations.
+
 ## 18. What's the difference between a Python module and a Python package?
 ## 19. What is a global interpreter lock (GIL)?
 Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
 
 ## 20. Which is faster, list comprehension or for loop?
 ## 21. Explain Singleton class and its uses?
+Refer to [Python Advanced : Design Patterns](https://github.com/baliyanvinay/Python-Advanced/tree/main/Design%20Patterns)
+
 ## 22. Explain Meta Classes. 
 ## 23. Best way to concatenate n number of strings together into one.
 ## 24. Explain briefly about map() and lambda() functions.
 ## 25. Explain Abstract Classes and its uses.
 ## 26. Explain object creation process in detail. Which method is called first?
+When an object of a class is created or a class is instantiated, the /__new__() method of class is called. This particular method is resposible for returning a new class object. It can be overriden to implement object creational restrictions on class. <br>
+- The constructor of the class is /__new__() and 
+- the initializer of the class is /__init__(). <br>
+Initializer is called right after the constructor, if the constructor has not returned a class object, the initializer call is useless. 
+
 ## 27. Difference between a class variable and instance variable.
 | Parameter | Class Variable | Instance Variable |
 | :-------------:|:-------------:| :-------------:|
