@@ -352,8 +352,10 @@ Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Class%20Varia
 - Key must be of a type that is immutable. Values can be anything
 
 ```python
-dict_sample = {1: 12, 2: 14, 1: 16}
-print(dict_sample) # {1: 16, 2: 14}
+>>> dict_sample_01 = {1: 12, 2: 14, 1: 16}
+>>> dict_sample_02 # {1: 16, 2: 14}
+>>> dict_sample_02 = dict.fromkeys('123')
+>>> dict_sample_02 # {'1': None, '2': None, '3': None}
 ```
 
 ## Coding Question
