@@ -289,9 +289,9 @@ Refer to [Python Advanced : Design Patterns](https://github.com/baliyanvinay/Pyt
 ## 24. Explain briefly about map() and lambda() functions.
 ## 25. Explain Abstract Classes and its uses.
 ## 26. Explain object creation process in detail. Which method is called first?
-When an object of a class is created or a class is instantiated, the /__new__() method of class is called. This particular method is resposible for returning a new class object. It can be overriden to implement object creational restrictions on class. <br>
-- The constructor of the class is /__new__() and 
-- the initializer of the class is /__init__(). <br>
+When an object of a class is created or a class is instantiated, the \__new__() method of class is called. This particular method is resposible for returning a new class object. It can be overriden to implement object creational restrictions on class. <br>
+- The constructor of the class is \__new__() and 
+- the initializer of the class is \__init__(). <br>
 Initializer is called right after the constructor, if the constructor has not returned a class object, the initializer call is useless. 
 
 ## 27. Difference between a class variable and instance variable.
