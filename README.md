@@ -310,12 +310,26 @@ Refer to [Python Advanced : Design Patterns](https://github.com/baliyanvinay/Pyt
 ## 22. Explain Meta Classes. 
 ## 23. Best way to concatenate n number of strings together into one.
 ## 24. Explain briefly about map() and lambda() functions.
+### map(function, iterable)
+Map function returns an iterator that applies function to every item in the iterable. In case multiple iterables are passed, the iterator stops when the shortest iterable is exhausted.
+```python
+def custom_power(x, y):
+    return x**y
+
+values = [1,2,3,4]
+powers = [2,1,2] 
+map_iterator = map(custom_power, values, powers) # will skip the power of 4
+print(list(map_iterator)) # [1,2,9]
+```
+### lambda
+
 ## 25. Explain Abstract Classes and its uses.
 ## 26. Explain object creation process in detail. Which method is called first?
 When an object of a class is created or a class is instantiated, the \__new__() method of class is called. This particular method is resposible for returning a new class object. It can be overriden to implement object creational restrictions on class. <br>
 - The constructor of the class is \__new__() and 
 - the initializer of the class is \__init__(). <br>
-Initializer is called right after the constructor, if the constructor has not returned a class object, the initializer call is useless. 
+Initializer is called right after the constructor, if the constructor has not returned a class object, the initializer call is useless. <br>
+Note that the reason \__init__() could use class object(self) to initialize is because when the code flow reaches \__init__() the object of the class is already created. 
 
 ## 27. Difference between a class variable and instance variable.
 | Parameter | Class Variable | Instance Variable |
