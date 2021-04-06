@@ -322,10 +322,11 @@ map_iterator = map(custom_power, values, powers) # will skip the power of 4
 print(list(map_iterator)) # [1,2,9]
 ```
 ### lambda parameters: expression
-Lambda expression yields an anonymous function object. Note that functions created with lambda expressions cannot contain statements or annotations.
+Lambda expression yields an anonymous function object. Note that functions created with lambda expressions cannot contain statements or annotations. For example, can't assign variables in lambda definition.
 ```python
->>> list(map(lambda x: x+10, [1,2,3]))
->>> [11,12,13]
+>>> list(map(lambda x: x+10, [1,2,3])) # [11,12,13]
+>>> func =  lambda x: x+10 # <function <lambda> at 0x7fdb99e9c310>
+>>> func(25) # returns 35
 ```
 
 ## 25. Explain Abstract Classes and its uses.
@@ -376,6 +377,9 @@ Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Class%20Varia
 >>> dict_sample_02 = dict.fromkeys('123')
 >>> dict_sample_02 # {'1': None, '2': None, '3': None}
 ```
+
+## 29. Difference between an expression and a statement in Python
+A statement is a complete line of code that performs some action, while an expression is any section of the code that evaluates to a value. An expression is also a statement. Note that lambda function in Python only accepts expressions. 
 
 ## Coding Question
 ```python
