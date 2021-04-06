@@ -321,7 +321,12 @@ powers = [2,1,2]
 map_iterator = map(custom_power, values, powers) # will skip the power of 4
 print(list(map_iterator)) # [1,2,9]
 ```
-### lambda
+### lambda parameters: expression
+Lambda expression yields an anonymous function object. Note that functions created with lambda expressions cannot contain statements or annotations.
+```python
+>>> list(map(lambda x: x+10, [1,2,3]))
+>>> [11,12,13]
+```
 
 ## 25. Explain Abstract Classes and its uses.
 ## 26. Explain object creation process in detail. Which method is called first?
