@@ -307,7 +307,32 @@ Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gi
 ## 21. Explain Singleton class and its uses?
 Refer to [Python Advanced : Design Patterns](https://github.com/baliyanvinay/Python-Advanced/tree/main/Design%20Patterns)
 
-## 22. Explain Meta Classes. 
+## 22. Explain Meta Classes in Python.
+In Python everything is an object, even a class is an object. As a result, a class also must have a type. All classes in Python are of 'type' type. Even the class of 'type' is 'type'. So 'type' is the meta class in Python and to create custom meta class, you would need to inherit from 'type'.<br>
+### Use Case of Meta Class
+A meta class is the class of a class. A class is an instance of a metaclass. A metaclass is most commonly used as a class-factory. When you create an object by calling the class, Python creates a new class (when it executes the 'class' statement) by calling the metaclass.<br>
+```python
+>>> type(17) # <class 'int'>
+>>> type(int) # <class 'type'>
+>>> str.__class__ # <class 'type'>
+>>> type.__class__ # <class 'type'>
+```
+### Meta Class call
+The metaclass is called with the 
+- name: name of the class, 
+- bases: tuple of the parent class (for inheritance, can be empty) and 
+- attributes: dictionary containing attributes names and values.
+```python
+def init(self, make):
+    self.make = make
+
+# type(name, bases, attrs) 
+>>> Car = type('Car', (object,), {'__init__': init, '__repr__': lambda self: self.make,  'wheels': 4})
+>>> seltos = Car('Kia')
+>>> seltos # Kia
+```
+Ref: [Stack Overflow : Meta Classes](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
+
 ## 23. Best way to concatenate n number of strings together into one.
 ## 24. Explain briefly about map() and lambda() functions.
 ### map(function, iterable)
