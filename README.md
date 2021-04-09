@@ -406,6 +406,8 @@ Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Class%20Varia
 ## 29. Difference between an expression and a statement in Python
 A statement is a complete line of code that performs some action, while an expression is any section of the code that evaluates to a value. An expression is also a statement. Note that lambda function in Python only accepts expressions. 
 
+## 30. Explain threading in Python
+## 31. Can set have lists as elements?
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
