@@ -300,6 +300,11 @@ for _ in range(5):
 Note that it is entirely the convention to use single underscore in all these ways to avoid having defined extra variable for such operations.
 
 ## 18. What's the difference between a Python module and a Python package?
+#### Module
+The module is a Python file that contains collections of functions and global variables and with having a .py extension file.
+### Package
+The package is a directory having collections of modules. This directory contains Python modules and also having __init__.py file by which the interpreter interprets it as a Package. 
+
 ## 19. What is a global interpreter lock (GIL)?
 Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
 
