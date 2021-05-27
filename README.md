@@ -417,6 +417,7 @@ A statement is a complete line of code that performs some action, while an expre
 ## 33. Explain multiple inheritance in Python.
 ## 34. Explain method resolution order for multiple inheritance
 ## 35. What can be used as keys in dictionary?
+## 36. Explain shallow and deep copy in Python
 
 ## Coding Question
 ```python
