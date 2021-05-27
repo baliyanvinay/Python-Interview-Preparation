@@ -413,6 +413,11 @@ A statement is a complete line of code that performs some action, while an expre
 
 ## 30. Explain threading in Python
 ## 31. Can set have lists as elements?
+## 32. Is method overloading possible in Python?
+## 33. Explain multiple inheritance in Python.
+## 34. Explain method resolution order for multiple inheritance
+## 35. What can be used as keys in dictionary?
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
