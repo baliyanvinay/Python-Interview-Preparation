@@ -425,4 +425,6 @@ A statement is a complete line of code that performs some action, while an expre
 # Write a function that will place even elements of an array at even indexes and odd at odd indexes. 
 # Write a function that checks if an array is a subsequence of first array
 # Write a function that unzips nested dicts into expanded dicts.
+# What is the output of (0,1,2,3,(4,5,6),7,8)[::3]
+# Output of a=[[]]*5, a[0].append(1)
 ```
