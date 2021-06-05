@@ -284,6 +284,28 @@ while i < len(example_list):
 ```
 
 ## 14. What is MRO in Python? How does it work?
+Method Resolution Order (MRO) is the order in which Python looks for a method in a hierarchy of classes. Especially it plays vital role in the context of multiple inheritance as single method may be found in multiple super classes. 
+```python
+class A:
+    def process(self):
+        print('A')
+        
+class B(A):
+    pass
+    
+class C(A):
+    def process(self):
+        print('C')
+
+class D(B,C):
+    pass
+    
+obj = D()
+obj.process()
+# D -> B -> C -> A -> object 
+```
+Note: a class can't be called before its superclass in resolving MRO. Super Class has to be called after derived class
+
 ## 15. What is monkey patching? How to use it in Python?
 ## 16. What is the difference between staticmethod and classmethod?
 | Parameter | Class Method | Static Method |
