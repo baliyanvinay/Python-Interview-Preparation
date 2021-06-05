@@ -226,6 +226,21 @@ except (TypeError, IndexError, RuntimeError) as error:
 ```
 
 ## 11. Explain Closures in Python
+A closure is a functionality in Python where some data is memorized in the memory for lazy execution. Decorators heavily rely on the concept of closure. <br>
+To create a closure in python:-
+1. There must be a nested function(function within a enclosing/outer function)
+2. The nested function must refer to a value defined in the enclosing function
+3. The enclosing function must return(not call it) the nested function.
+```python
+def enclosing_function(defined_value):
+    def nested_function():
+        return defined_value+some_operation
+    return nested_function
+
+closure_function = enclosing_function(20)
+closure_function() # returns 20+some_operation
+```
+Objects are data with methods attached, closures are functions with data attached.
 
 ## 12. How to make a chain of function decorators?
 ```python
