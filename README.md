@@ -265,6 +265,24 @@ print(index())
 ```
 
 ## 13. Three different ways to fetch every 3rd item of a list
+Using index jump
+```python
+>>> example_list = [0,1,2,3,4,5,6]
+>>> example_list = [::3] # returns [0,3,6]
+```
+Using list comphrehension
+```python
+>>> [x for x in example_list if example_list.index(x)%3==0]
+>>> [0,3,6]
+```
+Using while loop
+```python
+i = 0
+while i < len(example_list):
+    print(example_list[i])
+    i += 3
+```
+
 ## 14. What is MRO in Python? How does it work?
 ## 15. What is monkey patching? How to use it in Python?
 ## 16. What is the difference between staticmethod and classmethod?
