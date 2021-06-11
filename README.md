@@ -472,7 +472,12 @@ A statement is a complete line of code that performs some action, while an expre
 ## 33. Explain multiple inheritance in Python.
 ## 34. Explain method resolution order for multiple inheritance
 ## 35. What can be used as keys in dictionary?
+Any immutable object type can be used as dictionary key even functions and classes can also be used as dictionary keys. 
+#### Why can't list or another dict(mutable object) be used as key in dictionary?
+Dict implementation reduces the average complexity of dictionary lookups to O(1) by requiring that key objects provide a "hash" function. Such a hash function takes the information in a key object and uses it to produce an integer, called a hash value. This hash value is then used to determine which "bucket" this (key, value) pair should be placed into. Mutuable objects like list or dict cannot provide a valid /__hash__ method.
+
 ## 36. Explain shallow and deep copy in Python
+## 37. Why Python generates a .pyc file even when it is an interpreted language?
 
 ## Coding Question
 ```python
