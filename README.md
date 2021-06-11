@@ -478,6 +478,7 @@ Dict implementation reduces the average complexity of dictionary lookups to O(1)
 
 ## 36. Explain shallow and deep copy in Python
 ## 37. Why Python generates a .pyc file even when it is an interpreted language?
+## 38. How private varibles are declared in Python?
 
 ## Coding Question
 ```python
