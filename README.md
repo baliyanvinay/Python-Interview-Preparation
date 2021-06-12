@@ -470,6 +470,8 @@ A statement is a complete line of code that performs some action, while an expre
 ## 31. Can set have lists as elements?
 ## 32. Is method overloading possible in Python?
 ## 33. Explain inheritance in Python.
+![Inheritance in Python](https://github.com/baliyanvinay/Python-Interview-Preparation/blob/main/Inheritance.png)
+
 ## 34. Explain method resolution order for multiple inheritance
 ## 35. What can be used as keys in dictionary?
 Any immutable object type can be used as dictionary key even functions and classes can also be used as dictionary keys. 
