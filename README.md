@@ -199,7 +199,7 @@ with open("log.txt") as infile:
 
 ## 9. Explain Generators and use case of it.
 A function or method which uses the yield statement is called a generator function. Such a function, when called, always returns an iterator object which can be used to execute the body of the function: calling the iterator’s iterator.\__next__()method will cause the function to execute until it provides a value using the yield statement. <br>
-When the function executes a return statement or falls off the end, a StopIteration exception is raised and the iterator will have reached the end of the set of values to be returned.
+When the function executes a return statement or falls off the end, a StopIteration exception is raised and the iterator will have reached the end of the set of values to be returned. Note that a generator can have n numbers of yield statements
 #### Use Case
 Generators are good for calculating large sets of results where you don't know if you are going to need all results, or where you don't want to allocate the memory for all results at the same time.
 
@@ -469,7 +469,7 @@ A statement is a complete line of code that performs some action, while an expre
 ## 30. Explain threading in Python
 ## 31. Can set have lists as elements?
 ## 32. Is method overloading possible in Python?
-## 33. Explain multiple inheritance in Python.
+## 33. Explain inheritance in Python.
 ## 34. Explain method resolution order for multiple inheritance
 ## 35. What can be used as keys in dictionary?
 Any immutable object type can be used as dictionary key even functions and classes can also be used as dictionary keys. 
@@ -478,7 +478,37 @@ Dict implementation reduces the average complexity of dictionary lookups to O(1)
 
 ## 36. Explain shallow and deep copy in Python
 ## 37. Why Python generates a .pyc file even when it is an interpreted language?
+Python follows a pattern of compiling the original source to byte codes, then interpreting the byte codes on a virtual machine. The .pyc file generated contains byte code. 
+
 ## 38. How private varibles are declared in Python?
+Python does not have anything called private member however by convention two underscore before a variable or function makes it private. 
+```python
+class XSpecial:
+    normal_var = 10
+    __private_var = 17
+
+>>> special_obj = XSpecial()
+>>> special_obj.normal_var
+>>> special_obj.__private_var # AttributeError
+```
+## 39. Difference between an array and list
+| List | Array | 
+| :-------------:|:-------------:|
+| Can contain elements of different data types | Contains homogeneous elements only i.e. same data type |
+| No need to import | Need to import via numpy or array |
+| Preferred for short sequence of data items | Preferred for large sequence of data items i.e., data analysis |
+| Can't perform airthmetic operations on whole list | Great for airthmetic operations |
+
+## 40. What is an iterator? How is iterator is different from a generator? 
+An iterator is an object that implements /__next__, which is expected to return the next element of the iterable object, and raise a StopIteration exception when no more elements are available.
+### Differnce between iterator and generator
+| Iterator | Generator | 
+| :-------------:|:-------------:|
+| Class is used to implement an iterator | Function is used to implement a generator |
+| Iterator uses iter() and next() functions | Generator uses yield keyword |
+| Every iterator is not a generator | Every generator is an iterator |
+| Saves the states of local variables every time ‘yield’ pauses execution | An iterator does not make use of local variables |
+| Memory efficient | More memory allocated than iterator |
 
 ## Coding Question
 ```python
