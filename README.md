@@ -468,6 +468,12 @@ A statement is a complete line of code that performs some action, while an expre
 
 ## 30. Explain threading in Python
 ## 31. Can set have lists as elements?
+You can't add a list to a set because lists are mutable, meaning that you can change the contents of the list after adding it to the set. You can however add tuples to the set, because you cannot change the contents of a tuple. <br>
+The objects have to be hashable so that finding, adding and removing elements can be done faster than looking at each individual element every time you perform these operations. <br>
+Some unhashable datatypes:
+- list: use tuple instead
+- set: use frozenset instead
+
 ## 32. Is method overloading possible in Python?
 ## 33. Explain inheritance in Python.
 ![Inheritance in Python](https://github.com/baliyanvinay/Python-Interview-Preparation/blob/main/Inheritance.png)
