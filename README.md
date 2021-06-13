@@ -479,9 +479,7 @@ Any immutable object type can be used as dictionary key even functions and class
 Dict implementation reduces the average complexity of dictionary lookups to O(1) by requiring that key objects provide a "hash" function. Such a hash function takes the information in a key object and uses it to produce an integer, called a hash value. This hash value is then used to determine which "bucket" this (key, value) pair should be placed into. Mutuable objects like list or dict cannot provide a valid /__hash__ method.
 
 ## 36. Explain shallow and deep copy in Python
-For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. 
-
-## 37. Why Python generates a .pyc file even when it is an interpreted language?
+For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. <br>
 Python follows a pattern of compiling the original source to byte codes, then interpreting the byte codes on a virtual machine. The .pyc file generated contains byte code. 
 ```python
 >>> import copy
@@ -500,6 +498,7 @@ Python follows a pattern of compiling the original source to byte codes, then in
 
 Ref: [Python Docs Copy](https://docs.python.org/3/library/copy.html)
 
+## 37. Why Python generates a .pyc file even when it is an interpreted language?
 ## 38. How private varibles are declared in Python?
 Python does not have anything called private member however by convention two underscore before a variable or function makes it private. 
 ```python
