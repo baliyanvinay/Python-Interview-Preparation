@@ -57,6 +57,17 @@ When an object is created in Python, it is assigned a type and an id. An object/
 >>> id(tuple_var) # ID changes when made changes in object.
 1753153466880
 ```
+##
+<b>Mutable objects and functon arguments</b>
+```python
+def sample_func(sample_arg):
+    sample_agr.append(10)
+    # No need to return the obj since it is utilizing the same memory block
+
+sample_list = [7, 8, 9]
+sample_func(sample_list)
+print(sample_list) # [7, 8, 9, 10]
+```
 
 ## 3. What is the difference between list and tuples in Python?
 
