@@ -420,9 +420,11 @@ print(list(map_iterator)) # [1,2,9]
 ### lambda parameters: expression
 Lambda expression yields an anonymous function object. Note that functions created with lambda expressions cannot contain statements or annotations. For example, can't assign variables in lambda definition.
 ```python
+>>> # lambda [parameter list] : expression
 >>> list(map(lambda x: x+10, [1,2,3])) # [11,12,13]
 >>> func =  lambda x: x+10 # <function <lambda> at 0x7fdb99e9c310>
 >>> func(25) # returns 35
+>>> lambda : 'hello' # with no parameter
 ```
 
 ## 25. Explain Abstract Classes and its uses.
