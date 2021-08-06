@@ -445,9 +445,7 @@ By default Python does not provide abstract class, ABC module of Python can be u
 Abstract method is a method that has a declaration but does not have an implementation. This ensures that any class built from this class will have to implement the method. 
 ```python
 from abc import ABC, abstractmethod
-
 class DB_PLugin(ABC):
-
     @abstractmethod
     def add_source(self):
         pass
