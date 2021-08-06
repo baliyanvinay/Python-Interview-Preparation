@@ -407,6 +407,15 @@ def init(self, make):
 Ref: [Stack Overflow : Meta Classes](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
 
 ## 23. Best way to concatenate n number of strings together into one.
+The best way of appending a string to a string variable is to use + or +=. This is because it's readable and fast. However in most of the codebases we see use of append and join when joining strings together, this is done for readablity and cleaner code. Sometimes it is more important to have code readablity to actually understand the operation.
+```python
+first_name = 'Max '
+last_name = 'Verstappen'
+full_name = first_name + last_name
+# using join string method
+full_name = ''.join( (first_name, last_name) ) # takes in tuple of string in case of multiple values
+```
+
 ## 24. Explain briefly about map() and lambda() functions.
 ### map(function, iterable)
 Map function returns an iterator that applies function to every item in the iterable. In case multiple iterables are passed, the iterator stops when the shortest iterable is exhausted.
