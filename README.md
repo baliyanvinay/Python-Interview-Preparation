@@ -439,6 +439,12 @@ Lambda expression yields an anonymous function object. Note that functions creat
 ```
 
 ## 25. Explain Abstract Classes and its uses.
+An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods that must be created within any child classes built from the abstract class. Or in more general terms, a class which contains one or more abstract methods is called an abstract class.<br>
+By default Python does not provide abstract class, ABC module of Python can be used to define an abstract class. 
+### Abstract Method
+Abstract method is a method that has a declaration but does not have an implementation. This ensures that any class built from this class will have to implement the method. 
+
+
 ## 26. Explain object creation process in detail. Which method is called first?
 When an object of a class is created or a class is instantiated, the \__new__() method of class is called. This particular method is resposible for returning a new class object. It can be overriden to implement object creational restrictions on class. <br>
 - The constructor of the class is \__new__() and 
