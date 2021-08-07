@@ -511,6 +511,16 @@ Some unhashable datatypes:
 - set: use frozenset instead
 
 ## 32. Is method overloading possible in Python?
+Yes method overloading is possible in Python. It can be achived using different number of arguments. 
+```python
+def increment(value, by=1):
+   return value+by
+
+# calling function
+increment(5) # returns 6
+increment(5, 2) # return 7
+```
+
 ## 33. Explain inheritance in Python.
 ![Inheritance in Python](https://github.com/baliyanvinay/Python-Interview-Preparation/blob/main/Inheritance.png)
 
