@@ -375,6 +375,8 @@ The package is a directory having collections of modules. This directory contain
 Ref: https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/
 
 ## 20. Which is faster, list comprehension or for loop?
+List comprehensions are generally faster than 'a for loop' because of the implementation of both. One key difference is that 'for loop' generally rounds up more than one statement/operation as compared to 'list comprehension' which has to perform single operation on all the elements. For example, creating a list or update in an existing list is faster when done using list comprehension.
+
 ## 21. Explain Singleton class and its uses?
 Refer to [Python Advanced : Design Patterns](https://github.com/baliyanvinay/Python-Advanced/tree/main/Design%20Patterns)
 
