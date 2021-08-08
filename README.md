@@ -541,6 +541,8 @@ Python follows a pattern of compiling the original source to byte codes, then in
 Ref: [Python Docs Copy](https://docs.python.org/3/library/copy.html)
 
 ## 37. Why Python generates a .pyc file even when it is an interpreted language?
+.pyc files are created by the Python interpreter when a .py file is imported, and they contain the "compiled bytecode" of the imported module/program, the idea being that the "translation" from source code to bytecode (which only needs to be done once) can be skipped on subsequent imports if the .pyc is newer than the corresponding .py file, thus speeding startup a little. But it's still interpreted.
+
 ## 38. How private varibles are declared in Python?
 Python does not have anything called private member however by convention two underscore before a variable or function makes it private. 
 ```python
