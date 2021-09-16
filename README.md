@@ -583,6 +583,17 @@ An iterator is an object that implements /__next__, which is expected to return 
 | Saves the states of local variables every time ‘yield’ pauses execution | An iterator does not make use of local variables |
 | Memory efficient | More memory allocated than iterator |
 
+## 41. How do you define a dict where several keys has same value?
+```python
+products = {}
+products.update(
+    dict.keys(['Apple','Mango','Oranges'], 20)
+)
+products.update(
+    dict.keys(['Pizza','Kind Pizza','Bad Pizza'], 30)
+)
+```
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
