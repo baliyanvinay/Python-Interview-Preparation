@@ -603,6 +603,16 @@ Each variable name is checked in the local namespace (the body of the function, 
 - <b>Global Namespace: </b>This namespace holds all the names of functions and other variables that are included in the modules being used in the python program.
 - <b>Built-in Namespace: </b>This is the highest level of namespace which is available with default names available as part of the python interpreter that is loaded as the programing environment.
 
+## 43. How can you access attribute of parent class bypassing the attribute with the same name in derived class?
+```python
+class Parent:
+    variable = 12
+    
+class Derived(Parent):
+    variable = 10
+```
+
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
