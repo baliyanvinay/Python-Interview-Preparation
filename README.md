@@ -595,6 +595,13 @@ products.update(
     dict.keys(['Pizza','Kind Pizza','Bad Pizza'], 30)
 )
 ```
+## 42. What are different types of namespaces in Python?
+Namespace is a way to implement scope. In Python, each package, module, class, function and method function owns a "namespace" in which variable names are resolved. Plus there's a global namespace that's used if the name isn't in the local namespace.<br>
+Each variable name is checked in the local namespace (the body of the function, the module, etc.), and then checked in the global namespace.
+### Types of Namespaces
+- <b>Local Namespace: </b>All the names of the functions and variables declared by a program are held in this namespace. This namespace exists as long as the program runs.
+- <b>Global Namespace: </b>This namespace holds all the names of functions and other variables that are included in the modules being used in the python program.
+- <b>Built-in Namespace: </b>This is the highest level of namespace which is available with default names available as part of the python interpreter that is loaded as the programing environment.
 
 ## Coding Question
 ```python
