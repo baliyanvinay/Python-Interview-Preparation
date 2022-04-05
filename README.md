@@ -80,6 +80,8 @@ print(sample_list) # [7, 8, 9, 10]
 | Performance | Relatively slower  | Relatively faster |
 | Memory | Large-Extra than the element size | Fixed to element size |
 
+Note: It is not required for tuples to have parenthesis, one can also define tuple ```python a = 2, 3, 4 ```
+
 ### Memory Allocation of Tuple and List
 Tuple does not allot any extra memory during construction because it will be immutable so does not have to worry about addition of elements. 
 ```python
