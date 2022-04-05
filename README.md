@@ -599,9 +599,9 @@ products.update(
 Namespace is a way to implement scope. In Python, each package, module, class, function and method function owns a "namespace" in which variable names are resolved. Plus there's a global namespace that's used if the name isn't in the local namespace.<br>
 Each variable name is checked in the local namespace (the body of the function, the module, etc.), and then checked in the global namespace.
 ### Types of Namespaces
-- <b>Local Namespace: </b>All the names of the functions and variables declared by a program are held in this namespace. This namespace exists as long as the program runs.
-- <b>Global Namespace: </b>This namespace holds all the names of functions and other variables that are included in the modules being used in the python program.
-- <b>Built-in Namespace: </b>This is the highest level of namespace which is available with default names available as part of the python interpreter that is loaded as the programing environment.
+- <b>Local Namespace: </b>The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function. 
+- <b>Global Namespace: </b>The global namespace for a module is created when the module definition is read in; normally, module namespaces also last until the interpreter quits.
+- <b>Built-in Namespace: </b>The namespace containing the built-in names is created when the Python interpreter starts up, and is never deleted.
 
 ## 43. How can you access attribute of parent class bypassing the attribute with the same name in derived class?
 ```python
@@ -610,8 +610,22 @@ class Parent:
     
 class Derived(Parent):
     variable = 10
+
+Parent.variable # returns 12
 ```
 
+## 44. Evaulation of boolean expressions
+- The expression x and y first evaluates x; if x is false, its value is returned; otherwise, y is evaluated and the resulting value is returned.
+- The expression x or y first evaluates x; if x is true, its value is returned; otherwise, y is evaluated and the resulting value is returned.
+```python
+x = 'Some Value'
+y = 24
+z = False
+x or y # returns x
+z or y # returns y
+x and y # returns y
+z and x # returns z
+```
 
 ## Coding Question
 ```python
