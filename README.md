@@ -627,6 +627,8 @@ x and y # returns y
 z and x # returns z
 ```
 
+## 45. Difference between multiprocessing and multithreading
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
