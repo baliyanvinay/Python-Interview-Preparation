@@ -628,6 +628,10 @@ z and x # returns z
 ```
 
 ## 45. Difference between multiprocessing and multithreading
+The threading module uses threads, the multiprocessing module uses processes. The difference is that threads run in the same memory space, while processes have separate memory. This makes it a bit harder to share objects between processes with multiprocessing. Since threads use the same memory, precautions have to be taken or two threads will write to the same memory at the same time. 
+- Multithreading is concurrent and is used for IO-bound tasks
+- Multiprocessing achieves true parallelism and is used for CPU-bound tasks
+Use Multithreading if most of your task involves waiting on API-calls, because why not start up another request in another thread while you wait, rather than have your CPU sit idly by. 
 
 ## Coding Question
 ```python
