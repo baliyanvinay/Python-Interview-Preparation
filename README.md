@@ -227,6 +227,11 @@ search_object = search_result('keyword')
 
 search_object.__next__()
 ```
+Note: You can only iterate over a generator once, if you try to loop over it second time it will return nothing. Generators also do not store all the values in memory, they generate the values on the fly
+```python
+mygenerator = (x*x for x in range(3))
+```
+When you call a generator function, the code you have written in the function body does not run. The function only returns the generator object.
 Example: https://github.com/baliyanvinay/Python-Advanced/blob/main/Generator.py
 
 ## 10. Is there a sequence in defining exceptions in except block for exception handling?
