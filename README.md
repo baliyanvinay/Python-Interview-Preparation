@@ -638,6 +638,15 @@ The threading module uses threads, the multiprocessing module uses processes. Th
 - Multiprocessing achieves true parallelism and is used for CPU-bound tasks
 Use Multithreading if most of your task involves waiting on API-calls, because why not start up another request in another thread while you wait, rather than have your CPU sit idly by. 
 
+## 46. How to merge two dictionaries together?
+```python
+first_dict = {'name': 'Tom', 'age': 44}
+second_dict = {'occupation': 'actor', 'nationality': 'British'}
+# merging
+final_dict = {**first_dict, **second_dict}
+```
+In case any key is repeated in both dictionaries, the second key will hold supremacy. 
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
