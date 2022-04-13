@@ -655,4 +655,5 @@ In case any key is repeated in both dictionaries, the second key will hold supre
 # Write a function that unzips nested dicts into expanded dicts.
 # What is the output of (0,1,2,3,(4,5,6),7,8)[::3]
 # Output of a=[[]]*5, a[0].append(1)
+# Of a given string, make it an accept python variable name
 ```
