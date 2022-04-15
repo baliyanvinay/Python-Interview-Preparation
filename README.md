@@ -647,6 +647,8 @@ final_dict = {**first_dict, **second_dict}
 ```
 In case any key is repeated in both dictionaries, the second key will hold supremacy. 
 
+## 47. How do you overload a python constructor?
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
