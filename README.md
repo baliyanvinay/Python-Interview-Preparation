@@ -649,6 +649,31 @@ In case any key is repeated in both dictionaries, the second key will hold supre
 
 ## 47. How do you overload a python constructor?
 
+## 48. Explain the below code
+```python
+def func(sample_list=[]):
+    sample_list.append(12)
+    # print(id(sample_list))
+    return sample_list
+
+print(func()) # [12]
+print(func()) # [12,12]
+```
+ Since list is mutualable type of data structure, the first time func is called, the list is empty, but when the same function is called twice, the list already has an item. We cans sure of the that by printing the id of the sample_list used in the first, on each subsquent call to the function, the id will return the same value. 
+ 
+ ## 49. Example filter with lambda expression.
+ ### filter
+ filter(function, iterable) # function must return True or False
+ ```python
+ input_list = ['Delhi', 'Mumbai', 'Noida, 'Gurugram']
+ to_match = 'Gurugram'
+ 
+ matched_list = list(filter(lambda item: True if item == to_match else False, input_list))
+ matched_list # ['Gurugram']
+ ```
+For every single item in the input_list, the condition is checked in the lambda function which returns either True or False.
+
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
