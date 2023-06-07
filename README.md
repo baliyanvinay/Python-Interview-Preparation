@@ -668,7 +668,7 @@ print(func()) # [12,12]
  input_list = ['Delhi', 'Mumbai', 'Noida, 'Gurugram']
  to_match = 'Gurugram'
  
- matched_list = list(filter(lambda item: True if item == to_match else False, input_list))
+ matched_list = list(filter(lambda item: item == to_match, input_list))
  matched_list # ['Gurugram']
  ```
 For every single item in the input_list, the condition is checked in the lambda function which returns either True or False.
