@@ -673,6 +673,8 @@ print(func()) # [12,12]
  ```
 For every single item in the input_list, the condition is checked in the lambda function which returns either True or False.
 
+## 50. Explain application context and context manager
+
 
 ## Coding Question
 ```python
