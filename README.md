@@ -697,7 +697,25 @@ print(func()) # [12,12]
  ```
 For every single item in the input_list, the condition is checked in the lambda function which returns either True or False.
 
-## 50. Explain application context and context manager
+## 50. Explain context managers.
+- A context manager in Python is a protocol implemented using the with statement.
+- It allows you to perform setup and teardown operations around a block of code.
+- Commonly used to manage resources like files, database connections, locks, etc.
+
+```python
+class MyContextManager:
+    def __enter__(self):
+        # Perform setup operations
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        # Perform cleanup operations
+
+# Using the context manager
+with MyContextManager() as cm:
+    # Code inside the context
+```
+
 
 
 ## Coding Question
