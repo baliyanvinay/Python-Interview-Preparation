@@ -325,6 +325,30 @@ obj.process()
 Note: a class can't be called before its superclass in resolving MRO. Super Class has to be called after derived class
 
 ## 15. What is monkey patching? How to use it in Python?
+Monkey patching refers to the practice of dynamically modifying or extending code at runtime, typically to change the behavior of existing classes, modules, or functions. 
+
+Monkey patching can be useful in several scenarios:
+1. Testing: It allows to replace parts of code during testing with mock objects or functions. 
+2. Hotfixes: In situations where you can't immediately deploy a fix to production code, monkey patching can be used as a temporary solution to address critical issues without waiting for a formal release cycle.
+3. Extending functionality: It enables to add new features or alter the behavior of existing code without modifying the original source. This can be useful when working with third-party libraries or legacy code that you can't modify directly.
+
+```python
+# Original module
+class OriginalClass:
+    def method(self):
+        return "Original method"
+
+# Monkey patching
+def new_method(self):
+    return "Patched method"
+
+# Patching the class method
+OriginalClass.method = new_method
+# Using the patched code
+obj = OriginalClass()
+print(obj.method())  # Output: "Patched method"
+```
+
 ## 16. What is the difference between staticmethod and classmethod?
 | Parameter | Class Method | Static Method |
 | :-------------:|:-------------:| :-------------:|
