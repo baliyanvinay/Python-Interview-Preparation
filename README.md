@@ -727,4 +727,5 @@ with MyContextManager() as cm:
 # What is the output of (0,1,2,3,(4,5,6),7,8)[::3]
 # Output of a=[[]]*5, a[0].append(1)
 # Of a given string, make it an accept python variable name
+# from a given list, return the duplicate elements only in sorted order
 ```
