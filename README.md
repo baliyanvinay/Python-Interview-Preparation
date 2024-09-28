@@ -689,7 +689,7 @@ print(func()) # [12,12]
  ### filter
  filter(function, iterable) # function must return True or False
  ```python
- input_list = ['Delhi', 'Mumbai', 'Noida, 'Gurugram']
+ input_list = ['Delhi', 'Mumbai', 'Noida', 'Gurugram']
  to_match = 'Gurugram'
  
  matched_list = list(filter(lambda item: item == to_match, input_list))
