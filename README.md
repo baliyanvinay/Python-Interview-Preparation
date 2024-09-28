@@ -179,7 +179,7 @@ finally:
 Examples :- TypeError, ValueError, ImportError, KeyError, IndexError, NameError, PermissionError, EOFError, ZeroDivisionError, StopIteration
 
 ##  6. Explain some changes in Python 3.8
-Positional arguements representation
+Positional arguments representation
 ```python
 def sum(a,b,/,c=10):
     return a+b+c
